@@ -12,7 +12,7 @@ document.getElementById("btn").addEvevntListner("btn")(("click" => async functio
 		alert("please enter a valod delay in ms");
 	}
 	function delayMsg(ms){
-		return new Promise{resolve => setTimeout(resolve, msg)};
+		return new Promise{resolve => setTimeout(resolve, ms)};
 	}
 		await delayMsg(delay);
 		output.textContent = text;
