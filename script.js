@@ -12,8 +12,8 @@ document.getElementById("btn").addEvevntListner("btn")(("click" => async functio
 		alert("please enter a valod delay in ms");
 	}
 	function delayMsg(ms){
-		new Promise{resolve => setTimeout(resolve, msg)};
-		await delayMsg(delay);
+		return new Promise{resolve => setTimeout(resolve, msg)};
 	}
+		await delayMsg(delay);
 		output.textContent = text;
 }))
